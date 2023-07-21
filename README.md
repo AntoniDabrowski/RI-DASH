@@ -8,3 +8,4 @@ docker-compose build
 docker-compose up
 ```
 
+Add your own ChatGPT API-KEY in .env file, in order to use the contextual chatbot.
