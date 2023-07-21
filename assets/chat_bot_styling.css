@@ -1,0 +1,17 @@
+.custom-personal-scrollbar::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #E5E5E5;
+}
+
+.custom-personal-scrollbar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F1F1F1;
+}
+
+.custom-personal-scrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #A5A5A5;
+}

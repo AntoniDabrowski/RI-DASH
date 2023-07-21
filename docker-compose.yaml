@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  dashboard:
+    build:
+      context: ./
+    container_name: RI-BIO-Container
+    hostname: RI-BIO-Host
+    restart: always
+    ports:
+      - 5000:80

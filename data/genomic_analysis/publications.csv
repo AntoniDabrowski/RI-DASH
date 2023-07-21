@@ -1,0 +1,26 @@
+first_cancer_type,second_cancer_type,file_name,title_id,url
+ccRCC,Thyroid cancer,000000.txt,0,https://www.dovepress.com/mir-758-3p-inhibits-proliferation-migration-and-invasion-of-clear-cell-peer-reviewed-article-CMAR
+ccRCC,IYD,000001.txt,1,https://linkinghub.elsevier.com/retrieve/pii/S0925443910001626
+ccRCC,TPO,000002.txt,2,https://linkinghub.elsevier.com/retrieve/pii/S2059702922000369
+ccRCC,TSHR,000003.txt,3,http://www.spandidos-publications.com/10.3892/etm.2019.7221
+ccRCC,HOXB7,000004.txt,4,https://www.nature.com/articles/onc2014197
+ccRCC,HOXB2,000005.txt,5,https://www.hindawi.com/journals/jo/2021/5541423/
+ccRCC,HOX2,000006.txt,6,https://onlinelibrary.wiley.com/doi/10.1002/ijc.2910510610
+ccRCC,HOXB-AS3,000007.txt,7,https://www.mdpi.com/2076-393X/10/7/1161
+Thyroid cancer,IYD,000008.txt,8,https://linkinghub.elsevier.com/retrieve/pii/S0079633613000120
+Thyroid cancer,TPO,000009.txt,9,https://linkinghub.elsevier.com/retrieve/pii/S0023683722013794
+Thyroid cancer,TSHR,000010.txt,10,https://www.europeanreview.org/wp/wp-content/uploads/4573-4580.pdf
+Thyroid cancer,SFTA3,000011.txt,11,https://www.spandidos-publications.com/10.3892/mmr.2017.7346
+Thyroid cancer,HOXB2,000012.txt,12,http://iovs.arvojournals.org/article.aspx?doi=10.1167/iovs.17-22237
+Thyroid cancer,HOX2,000013.txt,13,https://linkinghub.elsevier.com/retrieve/pii/S1556086416003312
+IYD,TPO,000014.txt,14,https://linkinghub.elsevier.com/retrieve/pii/S1521690X17300167
+IYD,TSHR,000015.txt,15,https://academic.oup.com/mend/article/25/9/1579/2614830
+TPO,TSHR,000016.txt,16,https://www.liebertpub.com/doi/10.1089/thy.2008.0420
+TSHR,SFTA3,000017.txt,17,https://www.liebertpub.com/doi/10.1089/thy.2016.0285
+TSHR,HOX2,000018.txt,18,https://linkinghub.elsevier.com/retrieve/pii/S2001037022002070
+HOXB7,HOXB2,000019.txt,19,https://aacrjournals.org/cebp/article/24/10/1574/70485/Network-Based-Integration-of-GWAS-and-Gene
+HOXB7,HOX2,000020.txt,20,https://onlinelibrary.wiley.com/doi/10.1002/ece3.8685
+HOXB7,HOXB-AS3,000021.txt,21,https://www.tandfonline.com/doi/full/10.1128/MCB.16.9.4842
+HOXB2,HOX2,000022.txt,22,https://www.tandfonline.com/doi/full/10.1080/09674845.2008.11732790
+HOXB2,HOXB-AS3,000023.txt,23,https://onlinelibrary.wiley.com/doi/10.1002/jcp.29499
+HOX2,HOXB-AS3,000024.txt,24,https://www.tandfonline.com/doi/full/10.1128/mcb.14.7.4872-4877.1994

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: lightFont;
+    src: url("http://127.0.0.1:8050/assets/font/Font-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: regularFont;
+    src: url("http://127.0.0.1:8050/assets/font/Font-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ultraboldFont;
+    src: url("http://127.0.0.1:8050/assets/font/Font-Ultrabold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: roboto-light;
+    src: url("http://127.0.0.1:8050/assets/Roboto/Roboto-Light.ttf") format("opentype");
+}
