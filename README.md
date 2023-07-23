@@ -1,24 +1,24 @@
 # RI-DASH
-RI-DASH is subset of our [company page](https://biomedical.dev6.rightinformation.com/). The purpose of this repository is to show the community that the top UI/UX standards can be achieved using DASH framework. We recommend checking out our portfolio tab to see the full demo[<sup>\[1\]</sup>](https://biomedical.dev6.rightinformation.com/genomic-analysis)[<sup>\[2\]</sup>](https://biomedical.dev6.rightinformation.com/lipidomic-analysis).
+RI-DASH is a subset of our [company page](https://biomedical.dev6.rightinformation.com/). The purpose of this repository is to show the community that the top UI/UX standards can be achieved using the DASH framework. We recommend checking out our portfolio tab to see the full demo[<sup>\[1\]</sup>](https://biomedical.dev6.rightinformation.com/genomic-analysis)[<sup>\[2\]</sup>](https://biomedical.dev6.rightinformation.com/lipidomic-analysis).
 
 ## Highlights
 <div style="display: grid">
-    <div style="display: grid; width: 700px; margin-left: auto; margin-right: auto">
+    <div style="display: grid; width: 650px; margin-left: auto; margin-right: auto">
         <img src="https://live.staticflickr.com/65535/53065642139_efa415c4b5_c.jpg">
         Figure 1: Analysis of the most discriminating genes for thyroid and kidney cancer.
     </div>
-    <div style="display: grid; width: 700px; margin-left: auto; margin-right: auto; padding-top: 50px">
+    <div style="display: grid; width: 650px; margin-left: auto; margin-right: auto; padding-top: 50px">
         <img src="https://live.staticflickr.com/65535/53065475846_636596ae50_h.jpg">
         Figure 2: Visualization of automatic information retrieval. Expression of crucial insights from the data.
     </div>
-    <div style="display: grid; width: 700px; margin-left: auto; margin-right: auto; padding-top: 50px"> 
+    <div style="display: grid; width: 650px; margin-left: auto; margin-right: auto; padding-top: 50px"> 
         <img src="https://live.staticflickr.com/65535/53065855240_ebc2acf556_h.jpg">
         Figure 3: Contextual chatbot. The user can ask questions about the relevant publication and the chatbot will answer them.
     </div>
 </div>
 
 ## Local set-up
-To ensure successful local run I recommend using docker. Run terminal in repository root. Next, use following commands to create a container.
+To ensure a successful local run I recommend using docker. Run the terminal in the repository root. Next, use the following commands to create a container.
 ```bash
 docker-compose build
 docker-compose up
