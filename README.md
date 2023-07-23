@@ -12,8 +12,7 @@ Add your own ChatGPT API-KEY in .env file, in order to use the contextual chatbo
 
 
 ## Structure
-
-```
+```bash
 $ tree
 .
 │   # All the graphics, stylesheets and scripts used in the project
