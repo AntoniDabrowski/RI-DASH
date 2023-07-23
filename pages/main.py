@@ -1,10 +1,11 @@
-import dash
+"""
+    The following code is under CC-BY-NC-SA 4.0 license (more in root/LICENSE.txt)
+            Free to use and redistribute for any non-commercial purpose
+"""
+
 from utils.page_template import portfolio_wrapper
-from utils.page_template_callbacks import *
-from dash.dependencies import Input, Output, State
-import pandas as pd
-from dash import dcc, html, dash_table
-import plotly.graph_objs as go
+from dash import html
+import dash
 
 dash.register_page(__name__, path='/', title='Bio Right Information')
 
@@ -14,12 +15,14 @@ layout = portfolio_wrapper(
             html.H1("Biomedical IT",
                     style={'font-weight':'bold',
                            'font-size':'59px',
-                           'padding-bottom':'20px'}),
+                           'padding-bottom':'20px',
+                           'font-family':'ultraboldFont'}),
             html.H1("Right BIO Intelligence",
                     style={'font-weight': 'normal',
                            'font-size':'24px',
-                           'padding-bottom':'20px'}),
-            html.H1("""We offer data analytics, data science, and artificial intelligence (AI) solutions to examine, organize, find trends, analyze, make predictions, and interpret biomedical data (information).""",
+                           'padding-bottom':'20px',
+                           'font-family': 'regularFont'}),
+            html.H1("""We offer data analytics, data science, and artificial intelligence solutions to examine, organize, find trends, analyze, make predictions, and interpret biomedical data.""",
                     style={'font-weight': 'lighter',
                            'font-size':'24px',
                            'padding-bottom':'20px'}),

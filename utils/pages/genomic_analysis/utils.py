@@ -1,4 +1,33 @@
+"""
+    The following code is under CC-BY-NC-SA 4.0 license (more in root/LICENSE.txt)
+            Free to use and redistribute for any non-commercial purpose
+"""
+
 from dash import html
+import pandas as pd
+
+table_df_path = './data/genomic_analysis/table_content_short.pickle'
+
+table_df = pd.read_pickle(table_df_path)
+table_data = [{"type": "Genes", "Thyroid_Carcinoma": table_df.loc["Thyroid_Carcinoma"]["Genes"],
+               "ccRCC": table_df.loc["ccRCC"]["Genes"]},
+              {"type": "Proteins", "Thyroid_Carcinoma": table_df.loc["Thyroid_Carcinoma"]["Proteins"],
+               "ccRCC": table_df.loc["ccRCC"]["Proteins"]},
+              {"type": "Lipids/fats", "Thyroid_Carcinoma": table_df.loc["Thyroid_Carcinoma"]["Lipids/fats"],
+               "ccRCC": table_df.loc["ccRCC"]["Lipids/fats"]},
+              {"type": "Metabolites", "Thyroid_Carcinoma": table_df.loc["Thyroid_Carcinoma"]["Metabolites"],
+               "ccRCC": table_df.loc["ccRCC"]["Metabolites"]}]
+table_columns = [{"name": "", "id": "type"}, {"name": "Thyroid Carcinoma", "id": "Thyroid_Carcinoma"},
+                 {"name": "ccRCC", "id": "ccRCC"}]
+
+table_description = \
+    """The table below shows key insights on a given topic based on analysis of over 10k publications collected from 
+    online repository OpenAlex. The analysis was performed by our specialized information retrieval system.
+    It ranked the most important elements for a given topic and provided the most relevant publications.
+    Then, the system created semantic embeddings of paragraphs and used them to answer question about the relation
+    between two topics. The table below shows the most important elements for two types of cancer."""
+
+
 
 plot_description = \
     """The visualization above shows key insights from our study in the
@@ -23,8 +52,6 @@ dialog_history = {
     'bot-0.1':'The results of the study showed that the expression of NIS and TSHR protein was significantly reduced in the thyroid cancer group compared with the normal group.',
     'user-1':['Tell me more about expression of NIS and TSHR protein','ccRCC','HOXB7'],
     'bot-1.1':'Western blotting results showed that the expression of NIS and TSHR protein was significantly reduced in the thyroid cancer group compared with the normal group. Immunohistochemistry showed the positive expression of NIS and TSHR in thyroid cancer group. The expression of NIS and TSHR mRNA and protein in thyroid cancer patients was significantly lower than that in normal group detected by RT-PCR and Western blotting.',
-    # 'user-2':['Summarize given study in three bullet points.','Thyroid cancer','TSHR'],
-    # 'bot-2.1':'The study examined the expression of NIS and TSHR in thyroid cancer and iodine nutritional status. The study included 120 cases of normal thyroid morphology examined by thyroid ultrasound and 120 cases of thyroid cancer. The study used radioimmunoassay, histopathological examination, real-time PCR analysis, and statistical analysis to analyze the data.'
 }
 
 def process_message(message):

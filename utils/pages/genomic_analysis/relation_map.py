@@ -1,10 +1,13 @@
+"""
+    The following code is under CC-BY-NC-SA 4.0 license (more in root/LICENSE.txt)
+            Free to use and redistribute for any non-commercial purpose
+"""
+
 import pickle
 import numpy as np
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 import dash
-import os
-import inspect
 import plotly.graph_objs as go
 
 @dash.callback([Output("progress_bar", "value"), Output("progress_bar", "label")],

@@ -1,7 +1,10 @@
+"""
+    The following code is under CC-BY-NC-SA 4.0 license (more in root/LICENSE.txt)
+            Free to use and redistribute for any non-commercial purpose
+"""
+
 from typing import Any, List, Optional, Type
-
 from pydantic import BaseModel, Extra, Field
-
 from langchain.base_language import BaseLanguageModel
 from langchain.chains.qa_with_sources.retrieval import RetrievalQAWithSourcesChain
 from langchain.chains.retrieval_qa.base import RetrievalQA

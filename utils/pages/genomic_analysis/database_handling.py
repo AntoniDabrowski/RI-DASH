@@ -1,8 +1,11 @@
+"""
+    The following code is under CC-BY-NC-SA 4.0 license (more in root/LICENSE.txt)
+            Free to use and redistribute for any non-commercial purpose
+"""
+
 import os
 import openai
 from dotenv import load_dotenv
-import inspect
-
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
@@ -18,7 +21,7 @@ if not os.environ.get('OPENAI_API_KEY'):
     raise ValueError("You have to provide valid OpenAI API key in '.env' file in the root of the repository.")
 openai.api_key = os.environ['OPENAI_API_KEY']
 
-persist_directory = 'database/db'
+persist_directory = 'database'
 
 
 def initialize_database(document_paths: list[str]):
@@ -69,12 +72,5 @@ def context_chatbot(context: str):
 
 
 if __name__ == "__main__":
-    # initialization of the database
     all_files = ['./../../../publications/TXTs/' + f'{i}.txt'.zfill(10) for i in range(25)]
     initialize_databases(all_files)
-
-    # print()
-    # query = "Summarize the given study."
-    # chatbot = VectorstoreIndexCreator().from_persistent_index(path=persist_directory)
-    # chatbot = context_chatbot('./../publications/TXTs/000010.txt')
-    # print(chatbot.query(query))

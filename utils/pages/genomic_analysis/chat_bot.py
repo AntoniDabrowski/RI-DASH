@@ -1,14 +1,14 @@
+"""
+    The following code is under CC-BY-NC-SA 4.0 license (more in root/LICENSE.txt)
+            Free to use and redistribute for any non-commercial purpose
+"""
+
 from dash import Input, Output, State
 from dash.exceptions import PreventUpdate
 import pandas as pd
-from dash import html
 import os
 import openai
-from colorama import Fore, Style
 from dotenv import load_dotenv
-from langchain.document_loaders import TextLoader
-from langchain.indexes import VectorstoreIndexCreator
-import inspect
 import dash
 import json
 
@@ -66,11 +66,3 @@ def get_publication_context(url):
     first_cancer_type = df[df['url'] == url]['first_cancer_type'].values[0]
     second_cancer_type = df[df['url'] == url]['second_cancer_type'].values[0]
     return f'./publications/TXTs/{file_name}',first_cancer_type,second_cancer_type
-
-# @dash.callback(
-#     Output('javascript', 'run'),
-#     [Input('user-query-button', 'n_clicks')])
-# def scrolling_down(x):
-#     if x:
-#         return "var objDiv = document.getElementById('chat-bot-output');objDiv.scrollTop = objDiv.scrollHeight;"
-#     return ""

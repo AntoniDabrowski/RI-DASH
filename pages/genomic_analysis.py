@@ -1,13 +1,15 @@
-from dash import dcc, html, register_page, dash_table
+"""
+    The following code is under CC-BY-NC-SA 4.0 license (more in root/LICENSE.txt)
+            Free to use and redistribute for any non-commercial purpose
+"""
+
+from dash import dcc, register_page, dash_table
 import dash_bootstrap_components as dbc
-import json
 import visdcc
 
 from utils.pages.genomic_analysis.utils import *
 from utils.pages.genomic_analysis.callbacks import *
-from utils.page_template import portfolio_wrapper, TOTAL_WIDTH
-from utils.pages.publication_summarization.utils import *
-from utils.pages.publication_summarization.callbacks import *
+from utils.page_template import portfolio_wrapper
 
 register_page(__name__, title='Bio Right Information')
 
