@@ -1,5 +1,5 @@
 # RI-DASH
-RI-DASH is a subset of our [company page](https://biomedical.dev6.rightinformation.com/). The purpose of this repository is to show the community that the top UI/UX standards can be achieved using the DASH framework. We recommend checking out our portfolio tab to see the full demo[<sup>\[1\]</sup>](https://biomedical.dev6.rightinformation.com/genomic-analysis)[<sup>\[2\]</sup>](https://biomedical.dev6.rightinformation.com/lipidomic-analysis).
+RI-DASH is a subset of our [company page](https://biomedical.dev6.rightinformation.com/). The purpose of this repository is to show the community that the **top UI/UX** standards can be achieved using the **DASH** framework. We recommend checking out our portfolio tab to see the full demo[<sup>\[1\]</sup>](https://biomedical.dev6.rightinformation.com/genomic-analysis)[<sup>\[2\]</sup>](https://biomedical.dev6.rightinformation.com/lipidomic-analysis).
 
 ## Highlights
 <div style="display: grid">
