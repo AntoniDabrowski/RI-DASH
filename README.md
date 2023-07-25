@@ -31,16 +31,16 @@ Add your own [OpenAI API-KEY](https://openai.com/blog/openai-api) in .env file, 
 ```bash
 $ tree
 .
-│   # All the graphics, stylesheets and scripts used in the project
+│   # All the graphics, stylesheets, and scripts used in the project
 ├── assets
 │
-│   # cache for chroma database - uesd in contextual chatbot
+│   # cache for chroma database - used in contextual chatbot
 ├── cache
 │
 │   # results of the genomic analysis - used for creating the plots
 ├── data
 │
-│   # chroma database - stores semantic embeddings of analysed publications chunks
+│   # chroma database - stores semantic embeddings of analyzed publications chunks
 ├── database
 │
 │   # body of each displayed page
